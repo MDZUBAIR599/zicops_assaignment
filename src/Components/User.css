@@ -1,0 +1,79 @@
+.main {
+  width: 90%;
+  margin: 20px;
+  padding: 20px;
+  color: white;
+  background-color: #111111;
+  border: 5px solid #6bcfcf;
+}
+.MainCircle {
+  margin: auto;
+  margin-top: 20px 0px 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 350px;
+  background-color: #161312;
+  border-radius: 50%;
+  box-shadow: 0 0 0 14px #6bcfcf;
+}
+
+.formbox {
+  padding: 20px;
+  width: 80%;
+  height: 50%;
+  text-align: center;
+}
+.formbox label {
+  font-size: 10px;
+  line-height: 30px;
+}
+.finger_print {
+  text-align: center;
+}
+.password {
+  border: 2px solid #6bcfcf;
+  background-color: black;
+  color: #6bcfcf;
+  line-height: 30px;
+  margin: 10px;
+  margin-left: 30px;
+  height: 35px;
+  width: 90%;
+}
+.submit {
+  line-height: 30px;
+  font-weight: 600px;
+  font-size: 18px;
+  background-color: #6bcfcf;
+  height: 2rem;
+  width: 40%;
+  margin-left: 30px;
+}
+.lab {
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+.left_door,
+.righrdoor {
+  width: 100px;
+  height: 200px;
+  margin-left: 10px;
+  background-color: #6bcfcf;
+}
+
+@keyframes example {
+  0% {
+    background-color: #6bcfcf;
+    left: -100px;
+    top: 100px;
+  }
+  100% {
+    background-color: #6bcfcf;
+    left: 0px;
+    top: 10px;
+  }
+}
