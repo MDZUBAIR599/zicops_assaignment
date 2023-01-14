@@ -19,7 +19,7 @@ function User() {
     const UerPassword = event.target.password.value;
     console.log(UerPassword);
     event.preventDefault();
-    if ("zubair123" === user.password) {
+    if (UerPassword === user.password) {
       setUsreLoggedIn(true);
     } else {
       SetErrorMessage(
@@ -55,26 +55,31 @@ function User() {
             <div className="lab">
               <div>
                 <div className="left_door"></div>
-                <h1>Timer:<span style={{ fontsize: "20px" ,}}>{remainingTime}</span> </h1>
-                
+                <h1>
+                  Timer:
+                  <span style={{ fontsize: "20px" }}>{remainingTime}</span>{" "}
+                </h1>
+
                 <button onClick={handleExit}>Exit</button>
                 <div className="right_door"></div>
               </div>
             </div>
           ) : (
-            <div >
-               <div className="finger_print">
-                <img src="https://user-images.githubusercontent.com/101566430/212470407-3cda4116-ae8b-4a8c-8946-41c1b2161049.jpeg" alt="fingerprint" />
-               </div>
+            <div>
+              <div className="finger_print">
+                <img
+                  src="https://user-images.githubusercontent.com/101566430/212470407-3cda4116-ae8b-4a8c-8946-41c1b2161049.jpeg"
+                  alt="fingerprint"
+                />
+              </div>
               <div className="formbox">
-               
-               <form onSubmit={HandleSubmit}>
-                 <label>ENTER YOUR PILEARNING PASSWORD</label>
-                 <input className="password" type="password" name="password" />
-                 <br />
-                 <input className="submit" type="submit" value="Enter Lab" />
-               </form>
-             </div>
+                <form onSubmit={HandleSubmit}>
+                  <label>ENTER YOUR PILEARNING PASSWORD</label>
+                  <input className="password" type="password" name="password" />
+                  <br />
+                  <input className="submit" type="submit" value="Enter Lab" />
+                </form>
+              </div>
             </div>
           )}
         </div>
